@@ -1,0 +1,20 @@
+services:
+  selenium:
+    image: seleniarm/standalone-chromium:latest
+    container_name: selenium
+    ports:
+      - "4444:4444"
+    shm_size: '1gb'
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4444/status"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  crawler:
+    build: .
+    depends_on:
+      selenium:
+        condition: service_healthy 
+    env_file:
+      - .env
