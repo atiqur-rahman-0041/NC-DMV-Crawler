@@ -18,7 +18,8 @@ Sick of spending your time waiting in the DMV walk-in line? Can’t snag an appo
 ## 🛠️ Prerequisites
 
 - Docker & Docker Compose (because who wants to fight with Python versions?)  
-- (Optional) Python 3.11+ if you’d rather run it natively  
+- (Optional) Python 3.11+ if you’d rather run it natively
+- Make (because automating boring stuff is the best kind of laziness)  
 - A Discord webhook URL (see [Intro to Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks))  
 
 ---
