@@ -43,6 +43,7 @@ Sick of spending your time waiting in the DMV walk-in line? Can’t snag an appo
 - cd into the directory and run `make up`
 - Make sure to keep your device open and connected to the internet
 - You should start receiving notifications in your Discord channel if there are any appointments available
+- If no appointment is available, you will see a log like "❌ Timeout while waiting for an element". This is not an error in setup or anything. I added this log for a sanity check, You can comment it out or change it if it bothers you too much.
 - If you want to stop the crawler, you can run `make down`
 
 ---
